@@ -6,19 +6,19 @@
 	"type": "module",
 	"scripts": {
 		"start": "npm run build && node dist/index.js",
-		"dev": "node --loader ts-node/esm src/index.ts",
-		"build": "tsc -p ."
+		"dev": "nodemon --exec node --no-warnings --loader ts-node/esm src/index.ts",
+		"build": "tsc"
 	},
 	"keywords": [],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
-		"@types/node": "^17.0.31",
+		"@types/node": "^18.0.0",
 		"nodemon": "^2.0.16",
-		"ts-node": "^10.7.0"
+		"ts-node": "^10.8.1"
 	},
 	"dependencies": {
-		"node-fetch": "^3.2.4",
+		"node-fetch": "^3.2.6",
 		"ora": "^6.1.0"
 	}
 }
